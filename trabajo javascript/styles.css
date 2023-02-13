@@ -1,5 +1,5 @@
-body{
-    background-color:blue ;
+.body{
+    background-color:#272727 ;
 }
 
 
@@ -21,3 +21,4 @@ body{
     text-decoration: line-through;
     color: rgb(219, 106, 8);
 }
+

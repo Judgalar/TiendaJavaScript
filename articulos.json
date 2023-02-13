@@ -52,6 +52,24 @@
     "genero" : "Cooperación, Cooperativo online, Multijugador, Multijugador multiplataforma, Un solo jugador, Acción",
     "precio" : "60",
     "ventas" : 0
+},
+{
+    "nombre" : "Marvel's Spider-Man Remastered",
+    "desarrollador" : "	Insomniac Games",
+    "Distribuidor" : "PlayStation PC LLC",
+    "fechaLanzamiento" : "08-12-22",
+    "genero" : "Un solo jugador, Acción, Aventura",
+    "precio" : "28",
+    "ventas" : 0
+},
+{
+    "nombre" : "Marvel’s Spider-Man: Miles Morales",
+    "desarrollador" : "	Insomniac Games",
+    "Distribuidor" : "PlayStation PC LLC",
+    "fechaLanzamiento" : "11-18-22",
+    "genero" : "Un solo jugador, Acción, Aventura",
+    "precio" : "22",
+    "ventas" : 0
 }
 
 

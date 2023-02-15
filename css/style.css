@@ -1,0 +1,24 @@
+.body{
+    background-color:#272727 ;
+}
+
+
+.head{
+    background-image: url(../img/head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    height: 600px;
+    text-align: center;
+}
+
+.transparente{
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+.transparente h5{
+    text-decoration: line-through;
+    color: rgb(219, 106, 8);
+}
+

@@ -1,4 +1,4 @@
-[
+ [
 {
     "nombre" : "Elden Ring",
     "desarrollador" : "FromSoftware",
@@ -6,7 +6,7 @@
     "fechaLanzamiento" : "02-25-22",
     "genero" : "Un solo jugador, Acción, RPG",
     "precio" : "35",
-    "ventas" : "0"
+    "ventas" : 0
 },
 {
     "nombre" : "Hogwarts Legacy",
@@ -15,7 +15,7 @@
     "fechaLanzamiento" : "02-10-23",
     "genero" : "Un solo jugador, Acción, Aventura, RPG",
     "precio" : "54",
-    "ventas" : "0"
+    "ventas" : 0
 },
 {
     "nombre" : "God of War",
@@ -24,7 +24,7 @@
     "fechaLanzamiento" : "01-14-22",
     "genero" : "Un solo jugador, Acción, Aventura, RPG",
     "precio" : "54",
-    "ventas" : "0"
+    "ventas" : 0
 },
 {
     "nombre" : "Star Wars Jedi: Fallen Order",
@@ -33,7 +33,7 @@
     "fechaLanzamiento" : "15-11-19",
     "genero" : "Un solo jugador, Acción, Aventura",
     "precio" : "10",
-    "ventas" : "0"
+    "ventas" : 0
 },
 {
     "nombre" : "Forza Horizon 5",
@@ -42,7 +42,7 @@
     "fechaLanzamiento" : "11-09-21",
     "genero" : "Un solo jugador, Acción, Aventura, Carreras, Simulación, Deporte",
     "precio" : "10",
-    "ventas" : "0"
+    "ventas" : 0
 },
 {
     "nombre" : "Call of Duty: Modern Warfare II",
@@ -51,7 +51,7 @@
     "fechaLanzamiento" : "08-28-22",
     "genero" : "Cooperación, Cooperativo online, Multijugador, Multijugador multiplataforma, Un solo jugador, Acción",
     "precio" : "60",
-    "ventas" : "0"
+    "ventas" : 0
 },
 {
     "nombre" : "Marvel's Spider-Man Remastered",
@@ -60,7 +60,7 @@
     "fechaLanzamiento" : "08-12-22",
     "genero" : "Un solo jugador, Acción, Aventura",
     "precio" : "28",
-    "ventas" : "0"
+    "ventas" : 0
 },
 {
     "nombre" : "Marvel’s Spider-Man: Miles Morales",
@@ -69,7 +69,7 @@
     "fechaLanzamiento" : "11-18-22",
     "genero" : "Un solo jugador, Acción, Aventura",
     "precio" : "22",
-    "ventas" : "0"
+    "ventas" : 0
 }
 
 

@@ -1,4 +1,4 @@
- [
+ export const productos = [
 {
     "nombre" : "Elden Ring",
     "desarrollador" : "FromSoftware",

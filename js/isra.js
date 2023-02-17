@@ -1,9 +1,13 @@
+import { productos } from "../articulos";
 
 
-    fetch('../articulos.json')
-  .then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS
-  .then(data => console.log(data));
+//convertimos el json en un archivo js
+const obj = JSON.parse(productos);
 
+// Almacenar los objetos en un array
+const array = Object.values(obj);
+
+console.log(array);
   // function filterProducts(categoria, stock, precio) {
   //   return products.filter((product) => {
   //     let meetscategoria = true;

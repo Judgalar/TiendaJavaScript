@@ -32,7 +32,18 @@
 
 
 
-
+.btnTodo{
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #3D3D3D;
+    color: white;
+}
+    .btnTodo:hover{
+        background-color: #FF5400;
+        color: white;
+    }
 #productos{
     width: 100%;
     margin: 0;

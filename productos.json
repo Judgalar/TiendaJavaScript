@@ -6,7 +6,7 @@
     "Distribuidor" : "BANDAI NAMCO Entertainment, FromSoftware",
     "fechaLanzamiento" : "02-25-22",
     "genero" : "Un solo jugador, Acción, RPG",
-    "precio" : 35,
+    "precio" : 38.89,
     "ventas" : 0
 },
 {
@@ -16,7 +16,7 @@
     "Distribuidor" : "Warner Bros. Games",
     "fechaLanzamiento" : "02-10-23",
     "genero" : "Un solo jugador, Acción, Aventura, RPG",
-    "precio" : 54,
+    "precio" : 43.89,
     "ventas" : 0
 },
 {
@@ -26,7 +26,7 @@
     "Distribuidor" : "PlayStation PC LLC",
     "fechaLanzamiento" : "01-14-22",
     "genero" : "Un solo jugador, Acción, Aventura, RPG",
-    "precio" : 54,
+    "precio" : 19.99,
     "ventas" : 0
 },
 {
@@ -36,7 +36,7 @@
     "Distribuidor" : "Electronic Arts",
     "fechaLanzamiento" : "15-11-19",
     "genero" : "Un solo jugador, Acción, Aventura",
-    "precio" : 10,
+    "precio" : 9.25,
     "ventas" : 0
 },
 {
@@ -46,7 +46,7 @@
     "Distribuidor" : "Xbox Game Studios",
     "fechaLanzamiento" : "11-09-21",
     "genero" : "Un solo jugador, Acción, Aventura, Carreras, Simulación, Deporte",
-    "precio" : 10,
+    "precio" : 28.99,
     "ventas" : 0
 },
 {
@@ -56,7 +56,7 @@
     "Distribuidor" : "Activision",
     "fechaLanzamiento" : "08-28-22",
     "genero" : "Cooperación, Cooperativo online, Multijugador, Multijugador multiplataforma, Un solo jugador, Acción",
-    "precio" : 60,
+    "precio" : 62.29,
     "ventas" : 0
 },
 {
@@ -66,7 +66,7 @@
     "Distribuidor" : "PlayStation PC LLC",
     "fechaLanzamiento" : "08-12-22",
     "genero" : "Un solo jugador, Acción, Aventura",
-    "precio" : 28,
+    "precio" : 26.99,
     "ventas" : 0
 },
 {
@@ -76,7 +76,17 @@
     "Distribuidor" : "PlayStation PC LLC",
     "fechaLanzamiento" : "11-18-22",
     "genero" : "Un solo jugador, Acción, Aventura",
-    "precio" : 22,
+    "precio" : 21.64,
+    "ventas" : 0
+},
+{
+    "id" : 9,
+    "nombre" : "Sea of Thieves",
+    "desarrollador" : "Rare Ltd",
+    "Distribuidor" : "Xbox Game Studios",
+    "fechaLanzamiento" : "06-03-20",
+    "genero" : "Cooperación, Cooperativo online, Multijugador, Multijugador multiplataforma, Cloud Gaming, Acción, Aventura, PvP online",
+    "precio" : 25.66,
     "ventas" : 0
 }
 

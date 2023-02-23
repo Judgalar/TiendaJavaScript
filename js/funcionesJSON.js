@@ -1,5 +1,5 @@
 function leerJSON(){
-    fetch("articulos.json")
+    fetch("productos.json")
         .then(res => res.json()) // Transforma la respuesta en un objeto json 
         .then((data) => {
             console.log(data)
@@ -7,14 +7,14 @@ function leerJSON(){
 }
 
 function cartasProductos(){
-    fetch("articulos.json")
+    fetch("productos.json")
         .then(res => res.json()) // Transforma la respuesta en un objeto json 
         .then((data) => {
             let html = '';
             data.forEach(element => {
                 html += `
                     <figure>
-                        <img src="img/cards/${element.id}.jpg" >
+                        <a href="/paginasProductos/${element.id}/producto.html"> <img src="img/cards/${element.id}.jpg" width="400px"> </a>
                         <figcaption>
                             <span id="titulo"> ${element.nombre} </span> 
                             <span id="precio"> ${element.precio}€ </span> 
@@ -22,13 +22,14 @@ function cartasProductos(){
                     </figure>
                 `;
             });
-            document.getElementById('lista').innerHTML = html;
+            document.getElementById('productos').innerHTML = html;
+
         }); 
 }
+
 cartasProductos();
 
 
 
 
 
-leerJSON();

@@ -2,8 +2,10 @@
     background-color:#272727 ;
 }
 
-
 .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(../img/head.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,8 +18,9 @@
     background-color: transparent;
     border: 0;
     color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em #FF5400, 0 0 0.2em #FF5400;
 }
-.transparente h5{
+.transparente h4{
     text-decoration: line-through;
     color: rgb(219, 106, 8);
 }
@@ -27,6 +30,17 @@
     background-color: grey;
 }
 
+
+
+
+#productos{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
 
 figure img{
     border-radius: 10px;

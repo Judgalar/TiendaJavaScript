@@ -26,3 +26,20 @@
 
     background-color: grey;
 }
+
+
+figure img{
+    border-radius: 10px;
+}
+    figure img:hover{
+        border: 1px solid #fff;
+    }
+figure figcaption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+    #precio{
+        font-size: 25px;
+    }

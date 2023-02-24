@@ -1,7 +1,18 @@
 .body{
     background-color:#272727 ;
 }
-
+.customNav{
+    justify-content: space-between;
+}
+    .bg-custom{
+        background-color: transparent;
+    }
+        .bg-custom button{
+            color: white;
+        }
+        .bg-custom button:hover{
+            color: #FF5400;
+        }
 .head{
     display: flex;
     justify-content: center;
@@ -44,7 +55,7 @@
         background-color: #FF5400;
         color: white;
     }
-#productos{
+.productos{
     width: 100%;
     margin: 0;
     display: flex;

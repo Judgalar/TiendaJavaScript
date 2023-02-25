@@ -1,0 +1,104 @@
+[
+{
+    "id" : 1,
+    "nombre" : "Elden Ring",
+    "desarrollador" : "FromSoftware",
+    "Distribuidor" : "BANDAI NAMCO Entertainment, FromSoftware",
+    "fechaLanzamiento" : "02-25-22",
+    "genero" : "Un solo jugador, Acción, RPG",
+    "precio" : 38.89,
+    "ventas" : 0,
+    "valoracion" : 5.5
+},
+{
+    "id" : 2,
+    "nombre" : "Hogwarts Legacy",
+    "desarrollador" : "Avalanche Software",
+    "Distribuidor" : "Warner Bros. Games",
+    "fechaLanzamiento" : "02-10-23",
+    "genero" : "Un solo jugador, Acción, Aventura, RPG",
+    "precio" : 43.89,
+    "ventas" : 0,
+    "valoracion" : 5
+},
+{
+    "id" : 3,
+    "nombre" : "God of War",
+    "desarrollador" : "Santa Monica Studio",
+    "Distribuidor" : "PlayStation PC LLC",
+    "fechaLanzamiento" : "01-14-22",
+    "genero" : "Un solo jugador, Acción, Aventura, RPG",
+    "precio" : 19.99,
+    "ventas" : 0,
+    "valoracion" : 2.3
+},
+{
+    "id" : 4,
+    "nombre" : "Star Wars Jedi: Fallen Order",
+    "desarrollador" : "Respawn Entertainment",
+    "Distribuidor" : "Electronic Arts",
+    "fechaLanzamiento" : "15-11-19",
+    "genero" : "Un solo jugador, Acción, Aventura",
+    "precio" : 9.25,
+    "ventas" : 0,
+    "valoracion" : 9
+},
+{
+    "id" : 5,
+    "nombre" : "Forza Horizon 5",
+    "desarrollador" : "Playground Games",
+    "Distribuidor" : "Xbox Game Studios",
+    "fechaLanzamiento" : "11-09-21",
+    "genero" : "Un solo jugador, Acción, Aventura, Carreras, Simulación, Deporte",
+    "precio" : 28.99,
+    "ventas" : 0,
+    "valoracion" : 6
+},
+{
+    "id" : 6,
+    "nombre" : "Call of Duty: Modern Warfare II",
+    "desarrollador" : "Treyarch, Infinity Ward, Raven Software, Beenox, Sledgehammer Games, Toys For Bob, High Moon Studios, Activision Shanghai, Demonware",
+    "Distribuidor" : "Activision",
+    "fechaLanzamiento" : "08-28-22",
+    "genero" : "Cooperación, Cooperativo online, Multijugador, Multijugador multiplataforma, Un solo jugador, Acción",
+    "precio" : 62.29,
+    "ventas" : 0,
+    "valoracion" : 3.2
+},
+{
+    "id" : 7,
+    "nombre" : "Marvel's Spider-Man Remastered",
+    "desarrollador" : "Insomniac Games",
+    "Distribuidor" : "PlayStation PC LLC",
+    "fechaLanzamiento" : "08-12-22",
+    "genero" : "Un solo jugador, Acción, Aventura",
+    "precio" : 26.99,
+    "ventas" : 0,
+    "valoracion" : 8
+},
+{
+    "id" : 8,
+    "nombre" : "Marvel's Spider-Man: Miles Morales",
+    "desarrollador" : "Insomniac Games",
+    "Distribuidor" : "PlayStation PC LLC",
+    "fechaLanzamiento" : "11-18-22",
+    "genero" : "Un solo jugador, Acción, Aventura",
+    "precio" : 21.64,
+    "ventas" : 0,
+    "valoracion" : 3
+},
+{
+    "id" : 9,
+    "nombre" : "Sea of Thieves",
+    "desarrollador" : "Rare Ltd",
+    "Distribuidor" : "Xbox Game Studios",
+    "fechaLanzamiento" : "06-03-20",
+    "genero" : "Cooperación, Cooperativo online, Multijugador, Multijugador multiplataforma, Cloud Gaming, Acción, Aventura, PvP online",
+    "precio" : 25.66,
+    "ventas" : 0,
+    "valoracion" : 7
+}
+
+
+
+]

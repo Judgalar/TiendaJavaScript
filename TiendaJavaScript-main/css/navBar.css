@@ -1,0 +1,12 @@
+.customNav{
+    justify-content: space-between;
+}
+    .bg-custom{
+        background-color: transparent;
+    }
+        .bg-custom button{
+            color: white;
+        }
+        .bg-custom button:hover{
+            color: #FF5400;
+        }

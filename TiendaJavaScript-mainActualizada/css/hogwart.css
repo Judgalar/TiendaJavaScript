@@ -1,0 +1,51 @@
+.body{
+    background-color:#272727 ;
+}
+
+
+.head{
+    background-image: url(../img/head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    height: 600px;
+    text-align: center;
+}
+
+.transparente{
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+.transparente h5{
+    text-decoration: line-through;
+    color: rgb(219, 106, 8);
+}
+
+
+.producto{
+    padding: 20px;
+    margin-left: 300px;
+    
+}
+
+.info{
+    background-color: rgb(47, 47, 47);
+    color: white;
+    margin-right: 200px;
+    
+   
+}
+
+.info h2{
+    font-size: 60px;
+}
+
+
+.text1 h1{
+    color: white;
+}
+
+.text1 p{
+    color: rgb(119, 117, 117);
+}

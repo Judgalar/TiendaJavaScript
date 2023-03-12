@@ -1,3 +1,5 @@
+//JUAN DIEGO
+
 // Función para eliminar un producto del carrito y del localStorage
 function eliminarProducto(nombreJuego) {
     let carrito = JSON.parse(localStorage.getItem("carritoProductos")) || {};

@@ -1,3 +1,4 @@
+//JUAN DIEGO
 function agregarCarrito(nombre,precio){
   // Obtener la información del producto que se desea agregar al carrito
   const nombreJuego = nombre;

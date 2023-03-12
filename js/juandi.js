@@ -15,7 +15,7 @@ function devolverItemsPaginacion(idContenedor,index, limite,dataProductos) {
         if(element!=null){
             html += `
                 <figure>
-                    <a href="producto.html"> <img src="img/cards/${element.id}.jpg" width="400px"> </a>
+                    <a href="producto.html?id=${element.id}"> <img src="img/cards/${element.id}.jpg" width="400px"> </a>
                     <figcaption>
                         <span id="titulo"> ${element.nombre} </span> 
                         <span id="precio"> ${element.precio}€ </span>

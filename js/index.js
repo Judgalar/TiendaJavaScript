@@ -5,6 +5,7 @@ import {cartasProductos, cartasProductosPromocion} from "./isra.js";
 fetch("productos.json")
 .then(res => res.json())
 .then((productos) => {
+    
 cartasProductos('tendenciasItems', productos);
 cartasProductosPromocion('promocion', productos);
 });

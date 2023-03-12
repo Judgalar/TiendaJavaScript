@@ -9,7 +9,9 @@
     "precio" : 38.89,
     "ventas" : 0,
     "valoracion" : 5.5,
-    "descripcion" : "descripcion"
+    "descripcion" : "descripcion",
+    "promocion" : 10,
+    "masVendidos" : 0
 },
 {
     "id" : 2,
@@ -21,7 +23,8 @@
     "precio" : 43.89,
     "ventas" : 0,
     "valoracion" : 5,
-    "descripcion" : "descripcion"
+    "descripcion" : "descripcion",
+    "masVendidos" : 0
 },
 {
     "id" : 3,
@@ -33,7 +36,8 @@
     "precio" : 19.99,
     "ventas" : 0,
     "valoracion" : 2.3,
-    "descripcion" : "descripcion"
+    "descripcion" : "descripcion",
+    "masVendidos" : 1
 },
 {
     "id" : 4,
@@ -45,7 +49,9 @@
     "precio" : 9.25,
     "ventas" : 0,
     "valoracion" : 9,
-    "descripcion" : "descripcion"
+    "descripcion" : "descripcion",
+    "promocion" : 15,
+    "masVendidos" : 0
 },
 {
     "id" : 5,
@@ -57,7 +63,8 @@
     "precio" : 28.99,
     "ventas" : 0,
     "valoracion" : 6,
-    "descripcion" : "descripcion"
+    "descripcion" : "descripcion",
+    "masVendidos" : 1
 },
 {
     "id" : 6,
@@ -69,7 +76,8 @@
     "precio" : 62.29,
     "ventas" : 0,
     "valoracion" : 3.2,
-    "descripcion" : "descripcion"
+    "descripcion" : "descripcion",
+    "masVendidos" : 1
 
 },
 {
@@ -82,7 +90,9 @@
     "precio" : 26.99,
     "ventas" : 0,
     "valoracion" : 8,
-    "descripcion" : "descripcion"
+    "descripcion" : "descripcion",
+    "promocion" :15,
+    "masVendidos" : 1
 },
 {
     "id" : 8,
@@ -94,7 +104,8 @@
     "precio" : 21.64,
     "ventas" : 0,
     "valoracion" : 3,
-    "descripcion" : "descripcion"
+    "descripcion" : "descripcion",
+    "masVendidos" : 1
 },
 {
     "id" : 9,
@@ -106,7 +117,8 @@
     "precio" : 25.66,
     "ventas" : 0,
     "valoracion" : 7,
-    "descripcion" : "descripcion"
+    "descripcion" : "descripcion",
+    "masVendidos" : 1
 }
 
 

@@ -64,52 +64,9 @@
       <span id="cantidad-carrito" style="color: #FF5400;"></span>
       <span id="suma-total-carrito" style="color: #FF5400;"></span>
     </div>
-    
   </section>
   
 
-  <script>
-    // Obtener los productos existentes en el carrito, si los hay
-    let carrito = JSON.parse(localStorage.getItem("carritoProductos")) || {};
-
-    const tabla = document.querySelector("#tabla-carrito");
-
-    // cabecera de la tabla  
-    const tablaCabecera = `<tr>
-                        <th>Producto</th>
-                        <th>Cantidad</th>
-                        <th>Precio unitario</th>
-                        <th>Precio total</th>
-                      </tr>`;
-    tabla.innerHTML += tablaCabecera;
-
-    // Recorrer todos los productos del carrito
-    for (let nombreJuego in carrito) {
-      // Crear una fila para cada producto
-      const juego = carrito[nombreJuego];
-      const fila = `
-            <tr>
-              <td>${nombreJuego}</td>
-              <td>${juego.cantidad}</td>
-              <td>${juego.precio}</td>
-              <td>${juego.precio * juego.cantidad }</td>
-              </tr>`;
-      
-      // Agregar la fila a la tabla
-      tabla.innerHTML += fila;
-    }
-
-    const cantidadCarrito = document.getElementById("cantidad-carrito");
-    const sumaTotal = document.getElementById("suma-total-carrito");
-
-    cantidadCarrito.innerText = "Artículos: " + Object.keys(carrito).length.toString();
-
-    let total = 0;
-    for (const [nombreProducto, infoProducto] of Object.entries(carrito)) {
-      total += infoProducto.precio * infoProducto.cantidad;
-    }
-    sumaTotal.innerText ="Total: " +  total.toFixed(2) + "€";
-
-  </script>
+  <script src="js/carrito.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 
 
-export function cartasProductos(idContenedor, productos) {
+export function cartasProductosNOuso(idContenedor, productos) {
     let html = '';
     productos.forEach(juego => {
         html += `
@@ -16,6 +16,52 @@ export function cartasProductos(idContenedor, productos) {
         `;
     });
     document.getElementById(idContenedor).innerHTML = html;
+}
+
+
+export function cartasProductos(idContenedor, productos)
+{
+  let html =  '';
+  productos.forEach(juego =>{
+    if (juego.masVendidos){
+      html +=`
+      <figure>
+          <a href="producto.html"> <img src="img/cards/${juego.id}.jpg" width="400px"> </a>
+          <figcaption>
+              <span id="titulo"> ${juego.nombre} </span> 
+              <span id="precio"> ${juego.precio}€ </span> 
+          </figcaption>
+      </figure>
+  `;
+    }
+  })
+  document.getElementById(idContenedor).innerHTML = html;
+}
+
+
+export function cartasProductosPromocion(idContenedor, productos)
+{
+  let html =  '';
+  productos.forEach(juego =>{
+    if (juego.promocion){
+      html +=`
+      <figure>
+          <a href="producto.html"> <img src="img/cards/${juego.id}.jpg" width="400px"> </a>
+          <figcaption>
+              <span id="titulo"> ${juego.nombre} </span> 
+              <span id="precio"><strike> ${juego.precio}€</strike> </span>
+              
+              </figcaption>
+              <figcaption>
+              <span id="precioT"> ${juego.promocion}% </span>
+              <span id="precioR"> ${juego.precio - Math.round((juego.precio * juego.promocion / 100))}€ </span>   
+              
+          </figcaption>
+      </figure>
+  `;
+    }
+  })
+  document.getElementById(idContenedor).innerHTML = html;
 }
 
 
@@ -34,8 +80,10 @@ export function mostrarProductosFiltrados(producto, idContenedor, generoFiltro, 
           <figcaption>
             <span id="titulo"> ${juego.nombre} </span> 
             <span id="precio"> ${juego.precio}€ </span>
-            <span id="valoracion"> Valoración: ${juego.valoracion} </span> 
           </figcaption>
+          <figcaption>
+          <span id="valoracion"> Valoración: ${juego.valoracion} </span> 
+        </figcaption>
         </figure>
       `;
     });
@@ -74,6 +122,8 @@ export function mostrarProductosOrdenados(producto, idContenedor, ordenPor) {
           <figcaption>
             <span id="titulo"> ${juego.nombre} </span> 
             <span id="precio"> ${juego.precio}€ </span>
+          </figcaption>
+          <figcaption>
             <span id="valoracion"> Valoración: ${juego.valoracion} </span> 
           </figcaption>
         </figure>
@@ -98,8 +148,10 @@ export function mostrarProductosOrdenados(producto, idContenedor, ordenPor) {
           <figcaption>
             <span id="titulo"> ${juego.nombre} </span> 
             <span id="precio"> ${juego.precio}€ </span>
-            <span id="valoracion"> Valoración: ${juego.valoracion} </span> 
           </figcaption>
+          <figcaption>
+          <span id="valoracion"> Valoración: ${juego.valoracion} </span> 
+        </figcaption>
         </figure>
       `;
     });

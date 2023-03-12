@@ -1,3 +1,9 @@
-import{cartasProductos} from "./funcionesJSON.js";
 
-cartasProductos('tendenciasItems');  //NECESITA FILTRADO
+import {cartasProductos} from "./isra.js";
+
+//FETCH DEL INDEX
+fetch("productos.json")
+.then(res => res.json())
+.then((productos) => {
+cartasProductos('tendenciasItems', productos);
+});

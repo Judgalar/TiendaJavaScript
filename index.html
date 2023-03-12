@@ -33,7 +33,10 @@
               <a class="nav-link" href="index.html#categorias">Categorías</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="productos.html">Ver todo</a>
+              <a class="nav-link" href="todos.html">Ver todo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="filtros.html">Filtros</a>
             </li>
           </ul>
           <div class="botones d-flex">
@@ -54,7 +57,7 @@
     </nav>
   </header>
   <section>
-    <a href="paginasProductos/2/producto.html" style="text-decoration: none;">
+    <a href="producto.html" style="text-decoration: none;">
       <div class="row ">
           <div class="col-12 head">
               <div class="transparente">
@@ -66,216 +69,6 @@
       </div>
     </a>
   </section>
-   
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-
-        
-        <select id="sort-select">
-          <option value="0">Nombre</option>
-          <option value="1">Categoría</option>
-          <option value="2">Precio</option>
-          <option value="3">Stock</option>
-          <option value="4">Ventas</option>
-        </select>
-        <button onclick="OrdenarProductos(document.getElementById('sort-select').value)">Ordenar</button>
-        
-        <h3 style="color: white;padding: 20px;">Tendencias</h3> 
-      </div>
-    </div>
-
-    <table id="tabla-productos" class="table bg-light">
-      <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Categoría</th>
-          <th>Precio</th>
-          <th>Stock</th>
-          <th>Ventas</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Juego de mesa 1</td>
-          <td>Mesa</td>
-          <td>$20</td>
-          <td>10</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Juego de cartas 1</td>
-          <td>Cartas</td>
-          <td>$10</td>
-          <td>5</td>
-          <td>20</td>
-        </tr>
-        <tr>
-          <td>Juego de estrategia 1</td>
-          <td>Estrategia</td>
-          <td>$30</td>
-          <td>3</td>
-          <td>10</td>
-        </tr>
-      </tbody>
-    </table>
-    
-
-
-    <div class="row">
-        <div class="col">
-       
-          <div class="card" style="width: 18rem;">
-           <a href="hogwarts.html">  <img src="img/cards/2.jpg" class="card-img-top" alt="..."> </a>
-            <div class="card-body">
-              <p class="card-text">Hogwarts Legacy Deluxe Edition
-                53.49€</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="img/cards/2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="img/cards/1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-            
-        </div>
-
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="img/cards/2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-            
-        </div>
-    </div>
-  </div>
-
-
-
-
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <h3 style="color: white;padding: 20px;">Ofertas</h3> 
-      </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col">
-       
-          <div class="card" style="width: 18rem;">
-            <img src="img/cards/3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Hogwarts Legacy Deluxe Edition
-                53.49€</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="img/cards/6.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="img/cards/7.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-            
-        </div>
-
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="img/cards/4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-            
-        </div>
-    </div>
-  </div>
-
-
-  
-
-  <div class="row">
-    <div class="col">
-      <h1 style="color: white; text-align: center; padding: 25px;"> Los mas vendidos</h1>
-    </div>
-  </div>
-
-
-
-  <div class="row">
-    <div class="col-4 "></div>
-    <div class="col-4 p-5">
-
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="img/cards/5.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-          
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/cards/6.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-          
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/cards/8.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      
-
-
-    </div>
-  </div>
   
 
   <hr style="color: red;">
@@ -285,7 +78,7 @@
     <br><br><br><br><br>
     <div class="d-flex" style="justify-content: space-between; align-items: center;">
       <h3 style="color: white">Tendencias</h3>
-      <a href="productos.html" class="btnTodo">Ver todo</a>
+      <a href="todos.html" class="btnTodo">Ver todo</a>
     </div>
     <br>
     <div class="productos" id="tendenciasItems"></div>
@@ -298,7 +91,7 @@
     <br><br><br><br><br>
     <div class="d-flex" style="justify-content: space-between; align-items: center;">
       <h3 style="color: white">Categorías</h3>
-      <a href="productos.html" class="btnTodo">Ver todo</a>
+      <a href="todos.html" class="btnTodo">Ver todo</a>
     </div>
     <br>
     <div class="productos" id="categoriasItems"></div>

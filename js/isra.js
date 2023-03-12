@@ -1,62 +1,108 @@
-import { productos } from "../articulos";
 
 
-//convertimos el json en un archivo js
-const obj = JSON.parse(productos);
-
-// Almacenar los objetos en un array
-const array = Object.values(obj);
-
-console.log(array);
-  // function filterProducts(categoria, stock, precio) {
-  //   return products.filter((product) => {
-  //     let meetscategoria = true;
-  //     let meetsStock = true;
-  //     let meetsprecio = true;
-  
-  //     if (categoria && product.categoria !== categoria) {
-  //       meetscategoria = false;
-  //     }
-  
-  //     if (stock && product.stock < stock) {
-  //       meetsStock = false;
-  //     }
-  
-  //     if (precio) {
-  //       for (const key in precio) {
-  //         if (product.precios[key] !== precio[key]) {
-  //           meetsprecio = false;
-  //           break;
-  //         }
-  //       }
-  //     }
-  
-  //     return meetscategoria && meetsStock && meetsprecio;
-  //   });
-  // }
-  
 
 
-  function OrdenarProductos(column) {
-    const productTable = document.getElementById("tabla-productos");
-    const rows = Array.from(productTable.getElementsByTagName("tr"));
-    const headerRow = rows.shift();
-    const sortedRows = rows.sort((a, b) => {
-      const aValue = a.getElementsByTagName("td")[column].innerText;
-      const bValue = b.getElementsByTagName("td")[column].innerText;
+export function cartasProductos(idContenedor, productos) {
+    let html = '';
+    productos.forEach(juego => {
+        html += `
+            <figure>
+                <a href="producto.html"> <img src="img/cards/${juego.id}.jpg" width="400px"> </a>
+                <figcaption>
+                    <span id="titulo"> ${juego.nombre} </span> 
+                    <span id="precio"> ${juego.precio}€ </span> 
+                </figcaption>
+            </figure>
+        `;
+    });
+    document.getElementById(idContenedor).innerHTML = html;
+}
+
+
+
+
+export function mostrarProductosFiltrados(producto, idContenedor, generoFiltro, precioMaximoFiltro, valoracionMinimaFiltro) {
+    let html = '';
+    producto.filter(juego => {
+        return juego.genero.includes(generoFiltro) &&
+            juego.precio <= precioMaximoFiltro &&
+            juego.valoracion >= valoracionMinimaFiltro;
+    }).forEach(juego => {
+        html += `
+        <figure>
+          <a href="producto.html"> <img src="img/cards/${juego.id}.jpg" width="400px"> </a>
+          <figcaption>
+            <span id="titulo"> ${juego.nombre} </span> 
+            <span id="precio"> ${juego.precio}€ </span>
+            <span id="valoracion"> Valoración: ${juego.valoracion} </span> 
+          </figcaption>
+        </figure>
+      `;
+    });
+    document.getElementById(idContenedor).innerHTML = html;
+}
+
+
+
+
+
+
+export function mostrarProductosOrdenados(producto, idContenedor, ordenPor) {
+    let html = '';
+    let productosOrdenados = [];
   
-      if (column === 2 || column === 4) {
-        // Parsear los precios y números de ventas para que se ordenen correctamente
-        return parseFloat(aValue.slice(1)) - parseFloat(bValue.slice(1));
-      } else {
-        // Ordenar las cadenas de texto alfabéticamente
-        return aValue.localeCompare(bValue);
-      }
+    // Ordenar los productos según el criterio especificado
+    switch (ordenPor) {
+      case 'nombre':
+        productosOrdenados = producto.sort((a, b) => a.nombre.localeCompare(b.nombre));
+        break;
+      case 'fecha':
+        productosOrdenados = producto.sort((a, b) => new Date(a.fechaLanzamiento) - new Date(b.fechaLanzamiento));
+        break;
+      case 'precio':
+        productosOrdenados = producto.sort((a, b) => a.precio - b.precio);
+        break;
+      default:
+        productosOrdenados = producto;
+    }
+  
+    // Mostrar los productos ordenados en el HTML
+    productosOrdenados.forEach(juego => {
+      html += `
+        <figure>
+          <a href="producto.html"> <img src="img/cards/${juego.id}.jpg" width="400px"> </a>
+          <figcaption>
+            <span id="titulo"> ${juego.nombre} </span> 
+            <span id="precio"> ${juego.precio}€ </span>
+            <span id="valoracion"> Valoración: ${juego.valoracion} </span> 
+          </figcaption>
+        </figure>
+      `;
     });
   
-    // Volver a insertar las filas ordenadas en la tabla
-    productTable.innerHTML = "";
-    productTable.appendChild(headerRow);
-    sortedRows.forEach((row) => productTable.appendChild(row));
+    document.getElementById(idContenedor).innerHTML = html;
+  }
+  
+
+
+  export function buscarProductos(producto, idContenedor, busqueda) {
+    let html = '';
+    producto.filter(juego => {
+      return juego.nombre.toLowerCase().includes(busqueda.toLowerCase()) || 
+             juego.genero.toLowerCase().includes(busqueda.toLowerCase()) || 
+             juego.descripcion.toLowerCase().includes(busqueda.toLowerCase());
+    }).forEach(juego => {
+      html += `
+        <figure>
+          <a href="producto.html"> <img src="img/cards/${juego.id}.jpg" width="400px"> </a>
+          <figcaption>
+            <span id="titulo"> ${juego.nombre} </span> 
+            <span id="precio"> ${juego.precio}€ </span>
+            <span id="valoracion"> Valoración: ${juego.valoracion} </span> 
+          </figcaption>
+        </figure>
+      `;
+    });
+    document.getElementById(idContenedor).innerHTML = html;
   }
   

@@ -12,11 +12,11 @@
   <!-- Bootstrap -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navBar.js"></script>
   
 </head>
 
 <body class="body">
-    
   <header class="header sticky-top">
     <nav class="navbar navbar-dark navbar-expand-lg bg-custom" id="bg-custom">
       <div class="container-fluid">
@@ -33,7 +33,10 @@
               <a class="nav-link" href="index.html#categorias">Categorías</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="productos.html">Ver todo</a>
+              <a class="nav-link" href="todos.html">Ver todo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="filtros.html">Filtros</a>
             </li>
           </ul>
           <div class="botones d-flex">
@@ -53,5 +56,60 @@
       </div>
     </nav>
   </header>
+  <section class="container">
+
+    <table class="table" style="color: white;" id="tabla-carrito"></table>
+
+    <div class="d-flex justify-content-around">
+      <span id="cantidad-carrito" style="color: #FF5400;"></span>
+      <span id="suma-total-carrito" style="color: #FF5400;"></span>
+    </div>
+    
+  </section>
+  
+
+  <script>
+    // Obtener los productos existentes en el carrito, si los hay
+    let carrito = JSON.parse(localStorage.getItem("carritoProductos")) || {};
+
+    const tabla = document.querySelector("#tabla-carrito");
+
+    // cabecera de la tabla  
+    const tablaCabecera = `<tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio unitario</th>
+                        <th>Precio total</th>
+                      </tr>`;
+    tabla.innerHTML += tablaCabecera;
+
+    // Recorrer todos los productos del carrito
+    for (let nombreJuego in carrito) {
+      // Crear una fila para cada producto
+      const juego = carrito[nombreJuego];
+      const fila = `
+            <tr>
+              <td>${nombreJuego}</td>
+              <td>${juego.cantidad}</td>
+              <td>${juego.precio}</td>
+              <td>${juego.precio * juego.cantidad }</td>
+              </tr>`;
+      
+      // Agregar la fila a la tabla
+      tabla.innerHTML += fila;
+    }
+
+    const cantidadCarrito = document.getElementById("cantidad-carrito");
+    const sumaTotal = document.getElementById("suma-total-carrito");
+
+    cantidadCarrito.innerText = "Artículos: " + Object.keys(carrito).length.toString();
+
+    let total = 0;
+    for (const [nombreProducto, infoProducto] of Object.entries(carrito)) {
+      total += infoProducto.precio * infoProducto.cantidad;
+    }
+    sumaTotal.innerText ="Total: " +  total.toFixed(2) + "€";
+
+  </script>
 </body>
 </html>

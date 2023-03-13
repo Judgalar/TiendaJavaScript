@@ -1,0 +1,82 @@
+*{
+    transition: 0.3s;
+}
+.body{
+    background-color:#272727 ;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    height: 600px;
+    text-align: center;
+}
+
+.transparente{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em #FF5400, 0 0 0.2em #FF5400;
+}
+.transparente h4{
+    text-decoration: line-through;
+    color: rgb(219, 106, 8);
+}
+
+.ordenar{
+
+    background-color: grey;
+}
+
+.btnTodo{
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #3D3D3D;
+    color: white;
+}
+    .btnTodo:hover{
+        background-color: #FF5400;
+        color: white;
+    }
+.productos{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+figure img{
+    border-radius: 10px;
+}
+    figure img:hover{
+        border: 1px solid #fff;
+    }
+figure figcaption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+    #precio{
+        font-size: 25px;
+    }
+
+figure figcaption #precioR{
+    color:  rgb(219, 106, 8);
+    font-size: x-large;
+}
+
+
+figure figcaption #precioT{
+    color:  red;
+    font-size: medium;
+}

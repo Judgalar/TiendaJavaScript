@@ -23,6 +23,7 @@ function mostrarCarrito(){
                       <th>Producto</th>
                       <th>Cantidad</th>
                       <th>Precio unitario</th>
+                      <th>IVA</th>
                       <th>Precio total</th>
                       <th>Eliminar</th>
                     </tr>`;
@@ -36,8 +37,9 @@ function mostrarCarrito(){
       <tr>
           <td>${nombreJuego}</td>
           <td>${juego.cantidad}</td>
-          <td>${juego.precio}</td>
-          <td>${juego.precio * juego.cantidad }</td>
+          <td>${juego.precio}€</td>
+          <td>21%</td>
+          <td>${ ((juego.precio*1 + (juego.precio * 21/100)) * juego.cantidad).toFixed(2) }€</td>
           <td>
           <button class="btnTodo" onclick="eliminarProducto('${nombreJuego}')">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">

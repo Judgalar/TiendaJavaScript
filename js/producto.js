@@ -13,11 +13,15 @@ fetch("productos.json")
       {
         titulo.innerHTML = juego.nombre;
         precio.innerHTML = juego.precio + "€";
-
+        //si el juego tiene promocion cambio el precio y muestro el descuento
         if(juego.promocion)
         {
+          juego.precio = juego.precio - Math.round((juego.precio * juego.promocion / 100));
+          precio.innerHTML = juego.precio + "€";
+         
           descuento.innerHTML = juego.promocion + "%";
-        }  
+
+        } 
 
         acercaDelJuego.innerHTML = juego.descripcion;
         desarrollador.innerHTML = juego.desarrollador;
@@ -33,7 +37,7 @@ fetch("productos.json")
         foto5.src = "/imgProductos/" + juego.id + "/5.jpg"
       }
     });
-    // Obtener los elementos HTML que representan los productos
+  
   
     
   });
